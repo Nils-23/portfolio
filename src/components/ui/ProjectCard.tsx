@@ -14,6 +14,7 @@ interface Project {
     liveUrl: string;
     sourceUrl: string;
     image?: string;
+    imageFit?: string;
     details?: {
         problem: string;
         approach: string;
@@ -68,7 +69,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                         <img
                             src={project.image}
                             alt={`${project.title} Screenshot`}
-                            className="w-full h-full object-cover"
+                            className={cn(
+                                "w-full h-full",
+                                project.imageFit === "contain" ? "object-contain bg-black" : "object-cover"
+                            )}
                             onError={() => setImgError(true)}
                         />
                     ) : (

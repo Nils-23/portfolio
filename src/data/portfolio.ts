@@ -22,19 +22,53 @@ export const about = {
 
 export const projects = [
     {
-        slug: "telegram-loan-system",
-        title: "Human-in-the-Loop Telegram Loan System",
-        description: "Workflow-based automation with human decision checkpoints for risk control.",
-        status: "In Progress",
-        tech: ["n8n", "Telegram API", "Node.js"],
-        liveUrl: "[Live Demo URL]",
+        slug: "eventas-nairobi",
+        title: "Eventas",
+        description: "Location-based nightlife and event discovery platform with real-time social heatmaps.",
+        status: "Live",
+        tech: ["React Native", "Expo", "TypeScript", "Firebase", "Google Maps API"],
+        liveUrl: "https://www.eventas.live/",
         sourceUrl: "[GitHub URL]",
-        image: "/images/projects/telegram-loan.png", // Optional screenshot placeholder
+        image: "/images/projects/eventas.png", // Optional screenshot placeholder
+        imageFit: "contain",
         details: {
-            problem: "Managing micro-loans requires automated processing but high-stakes decisions need human oversight.",
-            approach: "Designed a hybrid system using n8n workflows that orchestrate the loan process. Routine tasks are automated, while critical risk assessments trigger a Telegram bot to request human approval.",
-            outcome: "Streamlined loan processing while maintaining strict risk controls. The system allows for rapid scaling of loan volume without losing the safety of manual review.",
-            learnings: "Orchestrating async human-machine interaction requires robust state management and timeout handling.",
+            problem: "Discovering nightlife events in Nairobi was fragmented; users wanted to know real-time event density and crowd levels.",
+            approach: "Designed a mobile app with React Native/Expo, utilizing custom Google Maps components, Firebase Firestore, and Cloud Functions to calculate and render real-time crowd heatmaps based on active GPS presence.",
+            outcome: "Streamlined event discovery by showing users active hotspots and live activity spikes.",
+            learnings: "Orchestrating background location signals efficiently requires careful power-consumption optimization and reliable geofencing.",
+        },
+    },
+    {
+        slug: "cmrs-mining-cooperative",
+        title: "Investor-Facing Mining Cooperative Website",
+        description: "Professional, credibility-driven website for CMRS.",
+        status: "Live",
+        tech: ["React", "Next.js", "Tailwind CSS"],
+        liveUrl: "https://www.risingstarminerals.com/services",
+        sourceUrl: "[GitHub URL]",
+        image: "/images/projects/cmrs.png", // Optional screenshot placeholder
+        details: {
+            problem: "CMRS needed a digital presence that communicated trust, scale, and professionalism to international investors.",
+            approach: "Built a high-performance, accessible site with clear messaging focused on business value and technical execution.",
+            outcome: "Established a strong digital footprint that serves as a key asset in investor relations.",
+            learnings: "For B2B/Investor sites, clarity and performance outweigh flashy design.",
+        },
+    },
+    {
+        slug: "focuslearn",
+        title: "FocusLearn",
+        description: "Adaptive learning companion app designed to support college students with ADHD through task management and study aids.",
+        status: "Completed",
+        tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
+        liveUrl: "[Live Demo URL]",
+        sourceUrl: "https://github.com/Nils-23/FocusLearn",
+        image: "/images/projects/focuslearn.png", // Optional screenshot placeholder
+        imageFit: "contain",
+        details: {
+            problem: "College students with ADHD struggle to maintain focus, organize study workflows, and manage tasks within standard learning interfaces.",
+            approach: "Designed and developed a personalized Next.js web application utilizing Firebase, incorporating custom study-timers, adaptive file parsing (PDF/DOCX to plain summaries), gamified task management, and focus-friendly reminders.",
+            outcome: "Successfully built a complete, responsive learning platform that increases workflow retention and engagement for neurodivergent students.",
+            learnings: "Tailoring UI/UX micro-interactions (like progress cues and clean visual layouts) is crucial when designing accessibility-driven products.",
         },
     },
     {
@@ -42,9 +76,9 @@ export const projects = [
         title: "Swahili Conversational AI Bot",
         description: "Local LLaMA & Distil models focused on language accessibility and performance.",
         status: "Completed",
-        tech: ["PyTorch", "Hugging Face", "FastAPI", "Docker"],
+        tech: ["PyTorch", "Hugging Face", "FastAPI", "Ollama3"],
         liveUrl: "[Live Demo URL]",
-        sourceUrl: "[GitHub URL]",
+        sourceUrl: "https://github.com/Nils-23/SWAHILI_BOT",
         image: "/images/projects/swahili-ai.png", // Optional screenshot placeholder
         details: {
             problem: "Most LLMs lack high-quality support for African languages like Swahili, limiting accessibility.",
@@ -70,35 +104,19 @@ export const projects = [
         },
     },
     {
-        slug: "cmrs-mining-cooperative",
-        title: "Investor-Facing Mining Cooperative Website",
-        description: "Professional, credibility-driven website for CMRS.",
-        status: "Live",
-        tech: ["React", "Next.js", "Tailwind CSS"],
-        liveUrl: "https://www.risingstarminerals.com/services",
+        slug: "telegram-loan-system",
+        title: "Human-in-the-Loop Telegram Loan System",
+        description: "Workflow-based automation with human decision checkpoints for risk control.",
+        status: "In Progress",
+        tech: ["n8n", "Telegram API", "Node.js", "Docker"],
+        liveUrl: "[Live Demo URL]",
         sourceUrl: "[GitHub URL]",
-        image: "/images/projects/cmrs.png", // Optional screenshot placeholder
+        image: "/images/projects/telegram-loan.png", // Optional screenshot placeholder
         details: {
-            problem: "CMRS needed a digital presence that communicated trust, scale, and professionalism to international investors.",
-            approach: "Built a high-performance, accessible site with clear messaging focused on business value and technical execution.",
-            outcome: "Established a strong digital footprint that serves as a key asset in investor relations.",
-            learnings: "For B2B/Investor sites, clarity and performance outweigh flashy design.",
-        },
-    },
-    {
-        slug: "eventas-nairobi",
-        title: "Eventas",
-        description: "Location-based nightlife and event discovery platform with real-time social heatmaps.",
-        status: "Live",
-        tech: ["React Native", "Expo", "TypeScript", "Firebase", "Google Maps API"],
-        liveUrl: "https://www.eventas.live/",
-        sourceUrl: "[GitHub URL]",
-        image: "/images/projects/eventas.png", // Optional screenshot placeholder
-        details: {
-            problem: "Discovering nightlife events in Nairobi was fragmented; users wanted to know real-time event density and crowd levels.",
-            approach: "Designed a mobile app with React Native/Expo, utilizing custom Google Maps components, Firebase Firestore, and Cloud Functions to calculate and render real-time crowd heatmaps based on active GPS presence.",
-            outcome: "Streamlined event discovery by showing users active hotspots and live activity spikes.",
-            learnings: "Orchestrating background location signals efficiently requires careful power-consumption optimization and reliable geofencing.",
+            problem: "Managing micro-loans requires automated processing but high-stakes decisions need human oversight.",
+            approach: "Designed a hybrid system using n8n workflows that orchestrate the loan process. Routine tasks are automated, while critical risk assessments trigger a Telegram bot to request human approval.",
+            outcome: "Streamlined loan processing while maintaining strict risk controls. The system allows for rapid scaling of loan volume without losing the safety of manual review.",
+            learnings: "Orchestrating async human-machine interaction requires robust state management and timeout handling.",
         },
     },
 ];
