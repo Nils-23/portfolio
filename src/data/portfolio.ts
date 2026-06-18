@@ -6,7 +6,7 @@ export const profile = {
     social: {
         email: "nilsako8@gmail.com",
         github: "https://github.com/Nils-23",
-        linkedin: "https://linkedin.com/in/[linkedin-username]",
+        linkedin: "https://www.linkedin.com/in/akonkwa-lwambwa-65188b34a/",
         resume: "/resume.pdf", // Path to the resume PDF
     },
 };
@@ -86,26 +86,26 @@ export const projects = [
         },
     },
     {
-        slug: "myevents-nairobi",
-        title: "MyEvents Nairobi",
-        description: "Map-based event discovery with social heatmaps.",
+        slug: "eventas-nairobi",
+        title: "Eventas",
+        description: "Location-based nightlife and event discovery platform with real-time social heatmaps.",
         status: "Live",
-        tech: ["Flutter", "Firebase", "Google Maps API"],
+        tech: ["React Native", "Expo", "TypeScript", "Firebase", "Google Maps API"],
         liveUrl: "[Live Demo URL]",
         sourceUrl: "[GitHub URL]",
-        image: "/images/projects/myevents.png", // Optional screenshot placeholder
+        image: "/images/projects/eventas.png", // Optional screenshot placeholder
         details: {
-            problem: "Discovering events in Nairobi was fragmented; users wanted to know 'where the crowd is'.",
-            approach: "Implemented a map-based interface with Snapchat-inspired heatmaps based on user activity/social signals.",
-            outcome: "Simplified event discovery for Nairobi's high-density social scene.",
-            learnings: "Social density signals are a powerful heuristic for 'relevance' in event discovery.",
+            problem: "Discovering nightlife events in Nairobi was fragmented; users wanted to know real-time event density and crowd levels.",
+            approach: "Designed a mobile app with React Native/Expo, utilizing custom Google Maps components, Firebase Firestore, and Cloud Functions to calculate and render real-time crowd heatmaps based on active GPS presence.",
+            outcome: "Streamlined event discovery by showing users active hotspots and live activity spikes.",
+            learnings: "Orchestrating background location signals efficiently requires careful power-consumption optimization and reliable geofencing.",
         },
     },
 ];
 
 export const skills = {
     languages: ["TypeScript", "Python", "SQL", "HTML/CSS"],
-    frameworks: ["React", "Next.js", "Node.js", "FastAPI", "Flutter"],
+    frameworks: ["React", "Next.js", "Node.js", "FastAPI", "React Native"],
     ml_data: ["PyTorch", "Hugging Face", "LLMs", "Stable Diffusion"],
     automation: ["n8n", "Docker", "Git", "CI/CD"],
     infrastructure: ["Netlify", "Firebase", "AWS (Basic)"],
