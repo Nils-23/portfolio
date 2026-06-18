@@ -125,6 +125,13 @@ export const skills = {
     languages: ["TypeScript", "Python", "SQL", "HTML/CSS"],
     frameworks: ["React", "Next.js", "Node.js", "FastAPI", "React Native"],
     ml_data: ["PyTorch", "Hugging Face", "LLMs", "Stable Diffusion"],
+    ai: [
+        "OpenAI API",
+        "Anthropic API",
+        "LangChain",
+        "Vector Databases",
+        "AI-inclusive Development",
+    ],
     automation: ["n8n", "Docker", "Git", "CI/CD"],
     infrastructure: ["Netlify", "Firebase", "AWS (Basic)"],
 };
