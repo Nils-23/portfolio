@@ -75,7 +75,7 @@ export const projects = [
         description: "Professional, credibility-driven website for CMRS.",
         status: "Live",
         tech: ["React", "Next.js", "Tailwind CSS"],
-        liveUrl: "[Live Demo URL]",
+        liveUrl: "https://www.risingstarminerals.com/services",
         sourceUrl: "[GitHub URL]",
         image: "/images/projects/cmrs.png", // Optional screenshot placeholder
         details: {
@@ -91,7 +91,7 @@ export const projects = [
         description: "Location-based nightlife and event discovery platform with real-time social heatmaps.",
         status: "Live",
         tech: ["React Native", "Expo", "TypeScript", "Firebase", "Google Maps API"],
-        liveUrl: "[Live Demo URL]",
+        liveUrl: "https://www.eventas.live/",
         sourceUrl: "[GitHub URL]",
         image: "/images/projects/eventas.png", // Optional screenshot placeholder
         details: {

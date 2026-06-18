@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -27,6 +28,8 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
+    const [imgError, setImgError] = useState(false);
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -59,19 +62,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                     {project.description}
                 </p>
 
-                {/* Optional screenshot or short looping demo GIF placeholder */}
+                {/* Project Image / Mockup Block */}
                 <div className="relative aspect-video w-full rounded-lg overflow-hidden border border-border bg-muted/40 flex items-center justify-center group-hover:border-foreground/10 transition-colors">
-                    {project.image ? (
-                        <div className="absolute inset-0 flex items-center justify-center font-mono text-xs text-muted-foreground bg-muted/60 select-none">
-                            {/* Render a beautiful placeholder box showing where the screenshot will go */}
-                            <div className="text-center p-4">
-                                <p className="font-semibold text-foreground/80 mb-1">{project.title} Mockup</p>
-                                <p className="text-[10px] text-muted-foreground">[{project.image}]</p>
-                            </div>
-                        </div>
+                    {project.image && !imgError ? (
+                        <img
+                            src={project.image}
+                            alt={`${project.title} Screenshot`}
+                            className="w-full h-full object-cover"
+                            onError={() => setImgError(true)}
+                        />
                     ) : (
-                        <div className="font-mono text-xs text-muted-foreground select-none">
-                            [Project Screenshot / GIF Placeholder]
+                        <div className="text-center p-4 select-none font-mono text-xs text-muted-foreground">
+                            <p className="font-semibold text-foreground/80 mb-1">{project.title} Mockup</p>
+                            <p className="text-[10px] text-muted-foreground">[{project.image || "No image defined"}]</p>
                         </div>
                     )}
                 </div>
