@@ -28,7 +28,7 @@ export const projects = [
         status: "Live",
         tech: ["React Native", "Expo", "TypeScript", "Firebase", "Google Maps API"],
         liveUrl: "https://www.eventas.live/",
-        sourceUrl: "[GitHub URL]",
+        sourceUrl: "https://github.com/Nils-23/Eventa",
         image: "/images/projects/eventas.png", // Optional screenshot placeholder
         imageFit: "contain",
         details: {
@@ -44,7 +44,7 @@ export const projects = [
         description: "Professional, credibility-driven website for COMRS.",
         status: "Live",
         tech: ["React", "Next.js", "Tailwind CSS"],
-        liveUrl: "https://www.risingstarminerals.com/services",
+        liveUrl: "https://www.risingstarminerals.com/",
         sourceUrl: "https://github.com/Nils-23/CMRS",
         image: "/images/projects/cmrs.png", // Optional screenshot placeholder
         details: {
@@ -60,7 +60,6 @@ export const projects = [
         description: "Adaptive learning companion app designed to support college students with ADHD through task management and study aids.",
         status: "Completed",
         tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
-        liveUrl: "[Live Demo URL]",
         sourceUrl: "https://github.com/Nils-23/FocusLearn",
         image: "/images/projects/focuslearn.png", // Optional screenshot placeholder
         imageFit: "contain",
@@ -77,7 +76,6 @@ export const projects = [
         description: "Local LLaMA & Distil models focused on language accessibility and performance.",
         status: "Completed",
         tech: ["PyTorch", "Hugging Face", "FastAPI", "Ollama3"],
-        liveUrl: "[Live Demo URL]",
         sourceUrl: "https://github.com/Nils-23/SWAHILI_BOT",
         image: "/images/projects/swahili-ai.png", // Optional screenshot placeholder
         details: {
@@ -93,7 +91,6 @@ export const projects = [
         description: "Dataset creation and model improvement for better representation of black men.",
         status: "Completed",
         tech: ["Stable Diffusion", "Python", "React Native"],
-        liveUrl: "[Live Demo URL]",
         sourceUrl: "https://github.com/Nils-23/AI-Powered-Hairstyle-Try-On-Application",
         image: "/images/projects/hairstyle-tryon.png", // Optional screenshot placeholder
         details: {
@@ -109,7 +106,6 @@ export const projects = [
         description: "Workflow-based automation with human decision checkpoints for risk control.",
         status: "In Progress",
         tech: ["n8n", "Telegram API", "Node.js", "Docker"],
-        liveUrl: "[Live Demo URL]",
         sourceUrl: "https://github.com/Nils-23/CampusCash",
         image: "/images/projects/telegram-loan.png", // Optional screenshot placeholder
         details: {
@@ -133,5 +129,5 @@ export const skills = {
         "AI-inclusive Development",
     ],
     automation: ["n8n", "Docker", "Git", "CI/CD"],
-    infrastructure: ["Netlify", "Firebase", "AWS (Basic)"],
+    databases_cloud: ["MongoDB", "Firebase", "AWS (Basic)", "Netlify"],
 };

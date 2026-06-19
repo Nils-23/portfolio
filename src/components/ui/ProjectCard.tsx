@@ -11,7 +11,7 @@ interface Project {
     description: string;
     status: string;
     tech: string[];
-    liveUrl: string;
+    liveUrl?: string;
     sourceUrl: string;
     image?: string;
     imageFit?: string;
@@ -98,15 +98,17 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
             {/* Links Section (Live Demo & Source Code) */}
             <div className="flex items-center gap-4 pt-6 mt-auto border-t border-border/50">
-                <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-xs font-mono font-medium text-foreground hover:text-foreground/85 transition-colors"
-                >
-                    Live Demo
-                    <ArrowUpRight className="ml-1 h-3.5 w-3.5" />
-                </a>
+                {project.liveUrl && !project.liveUrl.startsWith("[") && (
+                    <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-xs font-mono font-medium text-foreground hover:text-foreground/85 transition-colors"
+                    >
+                        Live Demo
+                        <ArrowUpRight className="ml-1 h-3.5 w-3.5" />
+                    </a>
+                )}
 
                 <a
                     href={project.sourceUrl}
