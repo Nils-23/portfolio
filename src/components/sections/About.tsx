@@ -53,7 +53,7 @@ export function About() {
                         >
                             <h3 className="text-sm font-medium text-foreground mb-2">Looking Ahead</h3>
                             <p className="text-sm text-muted-foreground">
-                                One project and one coffee at a time, I am commited to creating solutions and making the world an easier and better place to live.
+                                One project and one coffee at a time, I am committed to creating solutions and making the world an easier and better place to live.
                             </p>
                         </motion.div>
                     </div>
